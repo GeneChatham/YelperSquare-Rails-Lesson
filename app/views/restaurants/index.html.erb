@@ -1,0 +1,16 @@
+<h1>YelperSquare</h1>
+
+<h3>The following Austin restaurants have reviews: </h3>
+
+<ul>
+	<% @restaurants.each do |restaurant| %>
+		<li>
+			<img src="<%=restaurant.photo_url%>" height="100" width="100">
+			<%= restaurant.name %>
+			<%= restaurant.hours %>
+			<%= restaurant.cuisine %>
+			<%= restaurant.address %>
+		</li>
+		<br>
+	<% end %>
+</ul>
