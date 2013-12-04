@@ -1,0 +1,19 @@
+<div>
+	<%= link_to "HOME", root_url %>
+	<%= link_to "EDIT", edit_restaurant_path(@restaurant) %>
+	<%= link_to "DELETE", @restaurant, method: :delete, data: {confirm: "Are you sure you want to delete this restaurant from YelperSquare?"} %>
+</div>
+
+<h1><%= @restaurant.name %> </h1>
+<br>
+Hours: <%= @restaurant.hours %>
+<br>
+Cuisine: <%= @restaurant.cuisine %>
+<br>
+Address: <%= @restaurant.address %>
+<br>
+Average rating: <%= @restaurant.average_rating %>
+<br>
+<div>
+	<img src="<%= @restaurant.photo_url %>">
+</div>
