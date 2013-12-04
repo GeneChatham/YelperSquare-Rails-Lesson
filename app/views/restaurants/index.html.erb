@@ -1,6 +1,8 @@
 <h1>YelperSquare</h1>
 
-<h3>The following Austin restaurants have reviews: </h3>
+<h3>Create a profile for a new restaurant <%= link_to "HERE", new_restaurant_path %></h3>
+
+<h3>The following Austin restaurants already have reviews: </h3>
 
 <% @restaurants.each do |restaurant| %>
 	<div>
